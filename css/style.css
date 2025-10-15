@@ -1,0 +1,289 @@
+/* FONT */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+}
+
+:root {
+  /* BACKGROUND */
+
+  --with-color: #fff;
+  --bg-color: #87928b;
+
+  /*   FONTS COLORS */ 
+
+  --dark-color: #3d3d3d;
+  --gray-color: #525252;
+  --color-white: #f0f0f0;
+}
+
+/* DESENVOLVIMENTO */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-informations {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.75rem;
+  gap: 500px;
+  margin: 10px;
+}
+
+.header-contact-informations {
+  display: flex;
+  gap: 20px;
+}
+
+nav {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 510px;
+  height: 90px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--with-color);
+  text-transform: uppercase;
+}
+
+.container-project {
+  background-image: url("/assets/BGONE.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 602px;
+}
+
+.container-project-infos {
+  padding: 20px;
+  margin-left: 120px;
+}
+
+.container-project-infos h1 {
+  font-size: 3rem;
+  width: 700px;
+  color: var(--with-color);
+  margin-top: calc(300px - 25px);
+}
+
+.container-project-infos button {
+  background-color: transparent;
+  border: none;
+  color: var(--with-color);
+  border: 2px solid var(--with-color);
+  border-radius: 15px;
+  padding: 10px 50px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.container-about {
+  height: 650px;
+  background-color: var(--with-color);
+
+  display: flex; /* lado a lado */
+  align-items: center; /* centraliza verticalmente */
+  justify-content: space-between;
+  padding: 0 140px; /* respiro nas laterais */
+  gap: 60px; /* espaço entre texto e imagens */
+}
+
+.container-about-infos {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container-about-infos h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.collage {
+  position: relative;
+  width: fit-content;
+}
+
+.main {
+  max-width: 338.25px;
+  display: block;
+}
+
+.small {
+  position: absolute;
+  width: 120px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.small1 {
+  top: 10px;
+  left: -70px;
+}
+
+.small2 {
+  bottom: 10px;
+  right: -70px;
+}
+
+.apartament {
+  height: 630px;
+  background-color: var(--bg-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: var(--with-color);
+}
+
+.apartament-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.apartament-container h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.apartament-container p {
+  width: 700px;
+}
+
+.apartament-container button {
+  background-color: transparent;
+  border: none;
+  color: var(--with-color);
+  border: 2px solid var(--with-color);
+  border-radius: 15px;
+  padding: 10px 50px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+article {
+  height: 1024px;
+  text-align: center;
+}
+
+.container-projects {
+  width: 1000px;
+  margin: 120px auto;
+}
+
+.container-projects h4 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.container-projects p {
+  margin-top: 20px;
+}
+
+.container-projects-grid img {
+  object-fit: cover; /* garante que as imagens fiquem preenchidas sem distorção */
+  border-radius: 12px; /* deixa igualzinho ao layout */
+  transition: transform 0.4s ease; /* suaviza o movimento */
+}
+
+.container-projects-grid img:hover {
+  transform: scale(1.01); /* dá aquele zoom leve */
+  cursor: pointer; /* mãozinha pra interatividade */
+}
+
+.grid-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  align-self: center;
+  justify-self: center;
+  gap: 27px;
+}
+
+.grid-secundario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: center;
+  margin-top: 20px;
+  gap: 29px;
+}
+
+.contact {
+  height: 646px;
+  background-color: var(--bg-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact {
+  background-color: var(--with-color);
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 90px 20px;
+  border-radius: 15px;
+}
+
+.container-contact-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-contact-infos h5 {
+  font-size: 2rem;
+}
+
+.container-contact-img img {
+  object-fit: cover; /* garante que as imagens fiquem preenchidas sem distorção */
+  border-radius: 12px; /* deixa igualzinho ao layout */
+  transition: transform 0.4s ease; /* suaviza o movimento */
+}
+
+.container-contact-img img:hover {
+  transform: scale(1.01); /* dá aquele zoom leve */
+  cursor: pointer; /* mãozinha pra interatividade */
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text p {
+  cursor: pointer;
+}
